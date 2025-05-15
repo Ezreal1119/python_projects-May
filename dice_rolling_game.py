@@ -15,7 +15,7 @@ class DiceRollingGame:
 
     def get_dice_quantity(self) -> str:
         while True:
-            dice_count = input('Enter dice quantity: (1-10)')
+            dice_count = input('Enter dice quantity: (1-10)').strip()
             if dice_count not in [str(i) for i in range(1, 10)]:
                 print('Invalide choice!')
                 continue
